@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.passstorer.contraseasseguras.agregarContraActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtPagWeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pagina Web/Aplicacion/Servicio/Etc:"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/editTxtPagWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPagWeb"
+                android:hint="Ej: facebook"
+                android:textSize="20dp"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTxtPagWeb"
+                android:id="@+id/txtUsuario"
+                android:text="Usuario:"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtUsuario"
+                android:textSize="20dp"
+                android:id="@+id/editTxtUsuario"
+                android:hint="Ej: pinocho23Master"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtContrasena"
+                android:layout_below="@id/editTxtUsuario"
+                android:textSize="20dp"
+                android:text="Contraseña:"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtContrasena"
+                android:orientation="horizontal"
+                android:id="@+id/layoutConContraYImagen">
+                <EditText
+                    android:id="@+id/editTxtContrasena"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="Ej: 12bananasGRANDES!"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/btnVer"
+                    android:src="@android:drawable/ic_menu_view"
+                    android:background="@android:color/white"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTxtContrasenaRepetida"
+                android:layout_below="@id/layoutConContraYImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Repetir la contraseña"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtErrorContrasenas"
+                android:text="Las contraseñas no coinciden"
+                android:layout_below="@id/editTxtContrasenaRepetida"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmail"
+                android:text="Email asociado:"
+                android:textSize="20dp"
+                android:layout_below="@id/txtErrorContrasenas"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTxtEmail"
+                android:hint="Ej: fulano@gmail.com"
+                android:textSize="20dp"
+                android:layout_below="@id/txtEmail"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDatosExtra"
+                android:text="Datos extra:"
+                android:textSize="20dp"
+                android:layout_below="@id/editTxtEmail"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTxtDatosExtra"
+                android:hint="Ej: Suscripción se renueva todos los meses"
+                android:layout_below="@id/txtDatosExtra"
+                android:textSize="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTxtDatosExtra"
+                android:id="@+id/btnGuardar"
+                android:text="Guardar"/>
+        </RelativeLayout>
+    </ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="18dp"
+    tools:context="com.passstorer.contraseasseguras.MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageLock"
+        android:text="Ver contraseñas"
+        android:layout_margin="40dp"
+        android:textSize="32dp"
+        android:src="@drawable/lock"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonVerContrasenas"
+        android:layout_below="@id/imageLock"
+        android:text="Ver contraseñas"
+        android:textSize="32dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonVerContrasenas"
+        android:id="@+id/buttonAbout"
+        android:text="Sobre la aplicación"
+        android:textSize="32dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAbout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonAyudar"
+        android:text="Ayudar al creador"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:textSize="16dp"/>
+
+
+
+</RelativeLayout>
